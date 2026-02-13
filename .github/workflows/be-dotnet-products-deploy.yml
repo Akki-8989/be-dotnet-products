@@ -9,4 +9,6 @@ jobs:
     with:
       repo_name: be-dotnet-products
       infra_repo: Infrastructure
+      database_type: sqlserver
+      database_name: ecom_db
     secrets: inherit
