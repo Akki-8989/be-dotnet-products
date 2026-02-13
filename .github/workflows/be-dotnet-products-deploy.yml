@@ -1,0 +1,12 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    uses: Akki-8989/Infrastructure/.github/workflows/deploy-backend.yml@main
+    with:
+      repo_name: be-dotnet-products
+      infra_repo: Infrastructure
+    secrets: inherit
